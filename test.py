@@ -1,3 +1,5 @@
+#Practical no.2
+#Marks,Average ,etc
 def average(listofmarks):
     sum=0
     count=0
@@ -9,8 +11,6 @@ def average(listofmarks):
     print("Total Marks : ", sum)
     print("Average Marks : {:.2f}".format(avg))
 
-
-
 def Maximum(listofmarks):
     for i in range(len(listofmarks)):
         if listofmarks[i]!=-999:
@@ -20,7 +20,6 @@ def Maximum(listofmarks):
         if listofmarks[i]>Max:
             Max=listofmarks[i]
     return(Max)
-
 
 def Minimum(listofmarks):
     for i in range(len(listofmarks)):
@@ -32,8 +31,6 @@ def Minimum(listofmarks):
             Min=listofmarks[i]
     return(Min)
 
-
-
 def absentcount(listofmarks):
     count=0
     for i in range(len(listofmarks)):
@@ -41,11 +38,10 @@ def absentcount(listofmarks):
             count+=1
     return(count)
 
-
 def maxFrequency(listofmarks):
     i=0
     Max=0
-    print("Marks  |  Frequency")
+    print("Marks  |  Frequency")    #formating is used here
     for j in listofmarks:
         if (listofmarks.index(j)==i):
             print(j,"    |  ",listofmarks.count(j))
@@ -55,9 +51,6 @@ def maxFrequency(listofmarks):
         i=i+1
     return(mark,Max)
 
-
-
-
 marksinFDS=[]
 numberofstudents=int(input("Enter total number of students : "))
 for i in range(numberofstudents):
@@ -66,7 +59,7 @@ for i in range(numberofstudents):
 
 flag=1
 while flag==1:
-    print("\n\n--------------------MENU--------------------\n")
+    print("\n\t\bMENU")
     print("1. Total and Average Marks of the Class")
     print("2. Highest and Lowest Marks in the Class")
     print("3. Number of Students absent for the test")
