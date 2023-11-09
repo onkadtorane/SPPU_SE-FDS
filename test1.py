@@ -1,3 +1,5 @@
+#Practical No. 1
+#Badminton, Cricket & Football
 def removeDuplicate(d):
     lst=[]
     for i in d:
